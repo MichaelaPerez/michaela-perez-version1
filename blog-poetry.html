@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Michaela Perez | Computer Engineering Junior at UTD</a>
+      <a class="navbar-brand" href="index.html">Michaela Perez | Computer Engineering Senior at UTD</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,20 +33,14 @@
           <li class="nav-item">
             <a class="nav-link" href="resume.html">Resume</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="professional-interests.html">Professional Interests</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Projects
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="projects-home-schooling-during-covid-19.html">Home Schooling during COVID-19</a>
               <a class="dropdown-item" href="projects-project-accessibilities.html">Project Accessibilities</a>
               <a class="dropdown-item" href="projects-additive-manufactured-heat-exchangers.html">Additive Manufactured Heat Exchangers</a>
               <a class="dropdown-item" href="projects-dental-restoratives.html">Dental Restoratives</a>
-              <a class="dropdown-item" href="projects-latex.html">LaTeX Documents</a>
-              <a class="dropdown-item" href="projects-healthy-delicious-eating.html">Healthy, Delicious Eating</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -54,9 +48,9 @@
               Blogs
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-what-i-cant-include-on-my-resume.html">What I Can't Include on My Resume</a>
-              <a class="dropdown-item" href="blog-thoughts-on-life.html">Thoughts on Life</a>
-              <a class="dropdown-item" href="blog-creative-writings.html">Creative Writings</a>
+              <a class="dropdown-item" href="blog-recipes.html">Recipes</a>
+              <a class="dropdown-item" href="blog-poetry.html">Poetry</a>
+              <a class="dropdown-item" href="blog-educational-resources.html">Educational Resources</a>
             </div>
           </li>
           <li class="nav-item">
@@ -71,57 +65,30 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Services
-      <small>Subheading</small>
+    <h1 class="mt-4 mb-3">Creative Writings
+      <small>Poetry</small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
-      <li class="breadcrumb-item active">Services</li>
+      <li class="breadcrumb-item active">Creative Writings</li>
     </ol>
 
-    <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
+    <div id="like_button_container"></div>
 
-    <!-- Marketing Icons Section -->
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item">
+        <a class="page-link" href="#">&larr; Older</a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Newer &rarr;</a>
+      </li>
+    </ul>
+
+  </div>
 
   </div>
   <!-- /.container -->
@@ -129,7 +96,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Michaela Perez 2020</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -137,6 +104,12 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 
 </body>
 
