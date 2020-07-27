@@ -76,7 +76,135 @@
       <li class="breadcrumb-item active">Creative Writings</li>
     </ol>
 
-    <div id="like_button_container"></div>
+    <h2>Categories</h2>
+    <div class="row mb-4">
+      <table>
+        <tr>
+          <th>For Someone I Never Met</th>
+          <td>A collection of poems about a first love</td>
+        </tr>
+        <tr>
+          <th>
+            <!-- By Date Written Button -->
+            <a href="#byDateWritten" data-toggle="modal" data-target="#byDateWritten">
+              By Date Written
+            </a>
+
+            <!-- By Date Written Modal -->
+            <div class="modal fade" id="byDateWritten" tabindex="-1" role="dialog" aria-labelledby="byDateWritten" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="byDateWritten">By Date Written</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>2008-2010</li>
+                      <li>2011</li>
+                      <li>2012</li>
+                      <li>2013</li>
+                      <li>2014</li>
+                      <li>2015</li>
+                      <li>2016</li>
+                      <li>2017-2020</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </th>
+          <td>Poems in chronological order</td>
+        </tr>
+        <tr>
+          <th>
+            <!-- By Grade Button -->
+            <a href="#byGrade" data-toggle="modal" data-target="#byGrade">
+              By Grade
+            </a>
+
+            <!-- By Grade Modal -->
+            <div class="modal fade" id="byGrade" tabindex="-1" role="dialog" aria-labelledby="byGrade" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="byGrade">By Grade</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>4th and 5th</li>
+                      <li>6th</li>
+                      <li>7th</li>
+                      <li>8th</li>
+                      <li>9th</li>
+                      <li>10th</li>
+                      <li>11th</li>
+                      <li>12th</li>
+                      <li>Year 1</li>
+                      <li>Year 2</li>
+                      <li>Year 3</li>
+                      <li>Year 4</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </th>
+          <td>Poems grouped by grade</td>
+        </tr>
+        <tr>
+          <th>
+            <!-- By Rank Button -->
+            <a href="#byRank" data-toggle="modal" data-target="#byRank">
+              By Rank
+            </button>
+
+            <!-- By Date Written Modal -->
+            <div class="modal fade" id="byRank" tabindex="-1" role="dialog" aria-labelledby="byRank" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="byRank">By Rank</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>Really Quite Good</li>
+                      <li>Good</li>
+                      <li>meh</li>
+                      <li>New Place - Actually good</li>
+                      <li>New Place - Not so good</li>
+                      <li>Bad</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </th>
+          <td>Poems grouped by how much I like and admire them</td>
+        </tr>
+        <tr>
+          <th>Alphabetically</th>
+          <td>All poems in alphabetical order</td>
+        </tr>
+      </table>
+    </div>
 
     <!-- Pagination -->
     <ul class="pagination justify-content-center mb-4">
@@ -109,7 +237,7 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <!-- Load our React component. -->
-  <script src="like_button.js"></script>
+  <script src="poetry_display_category.js"></script>
 
 </body>
 
