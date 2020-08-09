@@ -231,13 +231,13 @@
                 docsID = row[5];
               }
             }
-            var categoryCol = -1;
+            var categoryCol = -1; console.log("cat col is...");
             if(category=="2008-2010" || category=="2011" || category=="2012" || category=="2013" || category=="2014" || category=="2015" || category=="2016" || category=="2017-2020") {
-              categoryCol = 2;
-            } else if(category=="4th and 5th" || category=="6th" || category=="7th" || category=="8th" || category=="9th" || category=="10th" || category=="11th" || category=="12th" || category=="Year 1" || category=="Year 2" || category=="Year 3" || category=="Year 4") {
-              categoryCol = 3;
+              categoryCol = 2; console.log("year");
+            } else if(category=="4th-5th" || category=="6th" || category=="7th" || category=="8th" || category=="9th" || category=="10th" || category=="11th" || category=="12th" || category=="Year-1" || category=="Year-2" || category=="Year-3" || category=="Year-4") {
+              categoryCol = 3; console.log("grade");
             } else {
-              categoryCol = 4;
+              categoryCol = 4; console.log("rank or other");
             }
             // Find prev poem in the same category
             for (i = indexOfCurrentPoemID-1; i >= 0; i--) {
